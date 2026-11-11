@@ -16,6 +16,8 @@
 | [`multimodal-eval`](skills/multimodal-eval/SKILL.md) | 建立同口径、多切片、可复核的多模态评测 | MLLM、VLM、Benchmark、回归评测 |
 | [`yolo-experiment`](skills/yolo-experiment/SKILL.md) | YOLO 训练、消融、导出与部署实验的回归门 | YOLO、检测、MoE、TensorRT |
 | [`observability-pipeline`](skills/observability-pipeline/SKILL.md) | 构建有快照口径、失败状态和离线回归门的看板 | 模型观测、下载趋势、静态看板 |
+| [`observatory-brief`](skills/observatory-brief/SKILL.md) | 汇总运行健康、任务、论文、项目和投稿窗口 | 每日简报、每周复盘、行动分诊 |
+| [`research-intake`](skills/research-intake/SKILL.md) | 将论文与模型清单样本转成去重待审候选 | 新论文入库、模型线索分诊、任务去重 |
 
 ## Prompt 目录
 
@@ -110,6 +112,21 @@ python scripts/export_observatory.py /path/to/model-observatory --force
 ```
 
 导出后仍需在 Model Observatory 仓库中运行它自己的采集与测试流程。本脚本不会提交、推送或部署目标仓库。
+
+## 从 Model Observatory 获取数据
+
+`observatory-brief` 与 `research-intake` 默认只读 `https://islinxu.github.io/model-observatory/data/` 下的公开 JSON，无需 Token：
+
+- 项目与任务：`github.json`、`entities.json`、`tasks.json`、`runs.json`。
+- 论文与模型：`awesome.json`、`homc.json`、`scholar.json`（需要时可扩展读取）。
+- 投稿窗口：`conferences.json`，投稿前仍须回会议官网复核。
+
+```bash
+python skills/observatory-brief/scripts/observatory_brief.py --output brief.md
+python skills/research-intake/scripts/research_intake.py --output intake.json
+```
+
+两个脚本都支持 `--data-dir` 离线快照，且不会自动回写任务、实体或指标。样本、全量、实测、自报、未核对和断链保持各自口径。
 
 ## 与 eval-skills 的分工
 

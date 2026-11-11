@@ -52,6 +52,18 @@
       "tags": ["可观测性", "快照", "质量"],
       "version": "1.0.0",
       "author": "isLinXu"
+    },
+    "observatory-brief": {
+      "category": "研究",
+      "tags": ["简报", "任务", "观测站"],
+      "version": "1.0.0",
+      "author": "isLinXu"
+    },
+    "research-intake": {
+      "category": "研究",
+      "tags": ["论文", "模型清单", "去重"],
+      "version": "1.0.0",
+      "author": "isLinXu"
     }
   }
 }

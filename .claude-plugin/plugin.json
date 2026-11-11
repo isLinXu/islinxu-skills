@@ -19,8 +19,10 @@
     "./skills/code-audit",
     "./skills/multimodal-eval",
     "./skills/observability-pipeline",
+    "./skills/observatory-brief",
     "./skills/paper-curation",
     "./skills/paper-deep-read",
+    "./skills/research-intake",
     "./skills/surgical-coding",
     "./skills/yolo-experiment"
   ]
