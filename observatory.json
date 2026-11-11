@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "target": {
+    "repo": "isLinXu/model-observatory",
+    "branch": "main"
+  },
+  "skills": {
+    "agent-workflow": {
+      "category": "工程",
+      "tags": ["Agent", "协作", "调试"],
+      "version": "1.0.0",
+      "author": "isLinXu"
+    },
+    "code-audit": {
+      "category": "工程",
+      "tags": ["代码审计", "调试", "效率"],
+      "version": "1.1.0",
+      "author": "isLinXu"
+    },
+    "surgical-coding": {
+      "category": "工程",
+      "tags": ["简洁实现", "精准改动", "验证"],
+      "version": "1.0.0",
+      "author": "isLinXu"
+    },
+    "paper-deep-read": {
+      "category": "研究",
+      "tags": ["论文", "复现", "研究"],
+      "version": "1.0.0",
+      "author": "isLinXu"
+    },
+    "paper-curation": {
+      "category": "研究",
+      "tags": ["论文", "清单", "去重"],
+      "version": "1.0.0",
+      "author": "isLinXu"
+    },
+    "multimodal-eval": {
+      "category": "研究",
+      "tags": ["多模态", "评测", "Benchmark"],
+      "version": "1.0.0",
+      "author": "isLinXu"
+    },
+    "yolo-experiment": {
+      "category": "工程",
+      "tags": ["YOLO", "检测", "实验"],
+      "version": "1.0.0",
+      "author": "isLinXu"
+    },
+    "observability-pipeline": {
+      "category": "工程",
+      "tags": ["可观测性", "快照", "质量"],
+      "version": "1.0.0",
+      "author": "isLinXu"
+    }
+  }
+}

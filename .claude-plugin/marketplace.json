@@ -1,0 +1,29 @@
+{
+  "name": "islinxu",
+  "id": "islinxu",
+  "owner": {
+    "name": "isLinXu"
+  },
+  "metadata": {
+    "description": "Research, evaluation, engineering, and observability skills by isLinXu.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "islinxu-skills",
+      "source": "./",
+      "description": "Multimodal research, evaluation, YOLO experiments, agent workflows, observability, and surgical coding.",
+      "version": "1.0.0",
+      "author": {
+        "name": "isLinXu"
+      },
+      "keywords": [
+        "multimodal",
+        "evaluation",
+        "agent",
+        "engineering"
+      ],
+      "category": "workflow"
+    }
+  ]
+}

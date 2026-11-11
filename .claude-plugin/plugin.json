@@ -1,0 +1,27 @@
+{
+  "name": "islinxu-skills",
+  "description": "Reusable skills for multimodal research, evaluation, computer vision, agent engineering, observability, and surgical coding.",
+  "version": "1.0.0",
+  "author": {
+    "name": "isLinXu"
+  },
+  "license": "MIT",
+  "keywords": [
+    "multimodal",
+    "evaluation",
+    "yolo",
+    "agent-workflow",
+    "observability",
+    "surgical-coding"
+  ],
+  "skills": [
+    "./skills/agent-workflow",
+    "./skills/code-audit",
+    "./skills/multimodal-eval",
+    "./skills/observability-pipeline",
+    "./skills/paper-curation",
+    "./skills/paper-deep-read",
+    "./skills/surgical-coding",
+    "./skills/yolo-experiment"
+  ]
+}
